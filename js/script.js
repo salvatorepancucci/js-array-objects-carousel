@@ -48,5 +48,6 @@ const createCarousel = () => {
         thumbnailItem.addEventListener('click', () => {
             updateActiveIndex(index); // Aggiorna l'indice attivo al click sulla miniatura
         });
+        thumbnails.appendChild(thumbnailItem); // Aggiunge la miniatura al contenitore
     });
 };
