@@ -25,3 +25,10 @@ const images = [
 const carouselInner = document.querySelector('.carousel-inner'); // Seleziona il contenitore interno del carosello
 const thumbnails = document.getElementById('thumbnails'); // Seleziona il contenitore delle miniature
 let activeIndex = 0; // Imposta l'indice attivo iniziale su 0
+
+// Funzione per creare gli elementi del carosello e le miniature
+const createCarousel = () => {
+    images.forEach((item, index) => {
+        
+    });
+};
