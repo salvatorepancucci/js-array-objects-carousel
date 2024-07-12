@@ -51,3 +51,10 @@ const createCarousel = () => {
         thumbnails.appendChild(thumbnailItem); // Aggiunge la miniatura al contenitore
     });
 };
+
+// Funzione per aggiornare l'indice attivo e rinfrescare il carosello e le miniature
+const updateActiveIndex = (index) => {
+    activeIndex = index; // Aggiorna l'indice attivo
+    refreshCarousel(); // Rinfresca il carosello
+    refreshThumbnails(); // Rinfresca le miniature
+};
