@@ -29,6 +29,13 @@ let activeIndex = 0; // Imposta l'indice attivo iniziale su 0
 // Funzione per creare gli elementi del carosello e le miniature
 const createCarousel = () => {
     images.forEach((item, index) => {
-        
+        // Crea un elemento del carosello
+        const carouselItem = document.createElement('div');
+        carouselItem.className = 'carousel-item';
+        carouselItem.style.backgroundImage = `url(${item.image})`;
+        carouselItem.innerHTML = `<div class="carousel-caption">
+                                      <h5>${item.title}</h5>
+                                      <p>${item.text}</p>
+                                  </div>`;
     });
 };
