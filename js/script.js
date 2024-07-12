@@ -80,3 +80,9 @@ document.getElementById('next-btn').addEventListener('click', () => {
     activeIndex = (activeIndex + 1) % images.length; // Incrementa l'indice attivo, ciclando all'inizio se necessario
     updateActiveIndex(activeIndex); // Aggiorna l'indice attivo
 });
+
+// Event listener per il pulsante "prev"
+document.getElementById('prev-btn').addEventListener('click', () => {
+    activeIndex = (activeIndex - 1 + images.length) % images.length; // Decrementa l'indice attivo, ciclando alla fine se necessario
+    updateActiveIndex(activeIndex); // Aggiorna l'indice attivo
+});
