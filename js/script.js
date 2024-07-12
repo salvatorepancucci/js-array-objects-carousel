@@ -86,3 +86,7 @@ document.getElementById('prev-btn').addEventListener('click', () => {
     activeIndex = (activeIndex - 1 + images.length) % images.length; // Decrementa l'indice attivo, ciclando alla fine se necessario
     updateActiveIndex(activeIndex); // Aggiorna l'indice attivo
 });
+
+// Inizializza il carosello
+createCarousel();
+refreshCarousel(); // Imposta la posizione iniziale del carosello
