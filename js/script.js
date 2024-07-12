@@ -58,3 +58,8 @@ const updateActiveIndex = (index) => {
     refreshCarousel(); // Rinfresca il carosello
     refreshThumbnails(); // Rinfresca le miniature
 };
+
+// Funzione per rinfrescare il carosello in base all'indice attivo
+const refreshCarousel = () => {
+    carouselInner.style.transform = `translateX(-${activeIndex * 100}%)`; // Trasla il carosello orizzontalmente
+};
