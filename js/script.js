@@ -74,3 +74,9 @@ const refreshThumbnails = () => {
         }
     });
 };
+
+// Event listener per il pulsante "next"
+document.getElementById('next-btn').addEventListener('click', () => {
+    activeIndex = (activeIndex + 1) % images.length; // Incrementa l'indice attivo, ciclando all'inizio se necessario
+    updateActiveIndex(activeIndex); // Aggiorna l'indice attivo
+});
