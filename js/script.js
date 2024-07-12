@@ -42,5 +42,11 @@ const createCarousel = () => {
         const thumbnailItem = document.createElement('div');
         thumbnailItem.className = 'thumbnail-item';
         thumbnailItem.style.backgroundImage = `url(${item.image})`;
+        if (index === activeIndex) {
+            thumbnailItem.classList.add('active'); // Imposta la miniatura attiva
+        }
+        thumbnailItem.addEventListener('click', () => {
+            updateActiveIndex(index); // Aggiorna l'indice attivo al click sulla miniatura
+        });
     });
 };
