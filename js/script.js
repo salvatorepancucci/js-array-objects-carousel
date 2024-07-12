@@ -22,4 +22,5 @@ const images = [
     }
 ];
 
-
+const carouselInner = document.querySelector('.carousel-inner'); // Seleziona il contenitore interno del carosello
+const thumbnails = document.getElementById('thumbnails'); // Seleziona il contenitore delle miniature
