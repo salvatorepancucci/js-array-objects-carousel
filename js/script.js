@@ -63,3 +63,14 @@ const updateActiveIndex = (index) => {
 const refreshCarousel = () => {
     carouselInner.style.transform = `translateX(-${activeIndex * 100}%)`; // Trasla il carosello orizzontalmente
 };
+
+// Funzione per rinfrescare le miniature in base all'indice attivo
+const refreshThumbnails = () => {
+    thumbnails.querySelectorAll('.thumbnail-item').forEach((thumbnail, index) => {
+        if (index === activeIndex) {
+            thumbnail.classList.add('active'); // Imposta la miniatura attiva
+        } else {
+            thumbnail.classList.remove('active'); // Rimuove la classe attiva dalle altre miniature
+        }
+    });
+};
