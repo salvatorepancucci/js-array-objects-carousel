@@ -37,5 +37,6 @@ const createCarousel = () => {
                                       <h5>${item.title}</h5>
                                       <p>${item.text}</p>
                                   </div>`;
+        carouselInner.appendChild(carouselItem); // Aggiunge l'elemento del carosello al contenitore
     });
 };
