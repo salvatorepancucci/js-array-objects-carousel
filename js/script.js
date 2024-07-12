@@ -38,5 +38,9 @@ const createCarousel = () => {
                                       <p>${item.text}</p>
                                   </div>`;
         carouselInner.appendChild(carouselItem); // Aggiunge l'elemento del carosello al contenitore
+        // Crea un elemento miniatura
+        const thumbnailItem = document.createElement('div');
+        thumbnailItem.className = 'thumbnail-item';
+        thumbnailItem.style.backgroundImage = `url(${item.image})`;
     });
 };
