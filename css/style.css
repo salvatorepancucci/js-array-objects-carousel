@@ -37,3 +37,27 @@
 .carousel-control-next {
     right: 10px;
 }
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail-item {
+    width: 100%;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.thumbnail-item.active {
+    opacity: 1;
+}
+
+.thumbnail-item:hover {
+    opacity: 0.8;
+}
